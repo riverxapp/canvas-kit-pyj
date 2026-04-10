@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chirag Dodiya | Full-Stack Software Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -18,8 +18,8 @@
       document.documentElement.classList.add(theme);
     })();
   </script>
-</head>
-<body class="min-h-screen bg-gradient-to-br from-slate-100 via-white to-blue-50 text-slate-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 dark:text-slate-100">
+
+
   <!-- Navbar -->
   <header class="sticky top-0 z-40 border-b border-white/20 bg-white/70 backdrop-blur-xl dark:border-slate-800/60 dark:bg-slate-950/70">
     <nav>
@@ -34,24 +34,24 @@
           <a href="#skills" class="text-sm font-medium transition hover:text-indigo-600">Skills</a>
           <a href="#about" class="text-sm font-medium transition hover:text-indigo-600">About</a>
           <a href="#testimonials" class="text-sm font-medium transition hover:text-indigo-600">Testimonials</a>
-          <a href="#faq" class="text-sm font-medium transition hover:text-indigo-600">FAQ</a>
+          
           <a href="#portfolio" class="text-sm font-medium transition hover:text-indigo-600">Portfolio</a>
         </div>
         <div class="hidden md:flex md:items-center md:gap-3">
           <button type="button" id="theme-toggle" class="rounded-xl p-2 transition hover:bg-slate-200/50 dark:hover:bg-slate-800/60" aria-label="Toggle theme">
-            <svg id="icon-sun" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-            <svg id="icon-moon" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            <svg id="icon-sun" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <svg id="icon-moon" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
           </button>
           <button type="button" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 px-6 py-2.5 text-sm font-semibold text-white shadow-xl transition-all duration-300 hover:scale-[1.05]" aria-label="Buy now button">Buy Now</button>
         </div>
         <div class="flex items-center gap-1 md:hidden">
           <button type="button" id="theme-toggle-mobile" class="rounded-xl p-2 transition hover:bg-slate-200/50 dark:hover:bg-slate-800/60" aria-label="Toggle theme">
-            <svg id="icon-sun-mobile" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-            <svg id="icon-moon-mobile" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            <svg id="icon-sun-mobile" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <svg id="icon-moon-mobile" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
           </button>
           <button type="button" id="mobile-menu-btn" class="rounded-xl p-2 transition hover:bg-slate-200/50 dark:hover:bg-slate-800/60 md:hidden" aria-label="Toggle menu">
-            <svg id="icon-menu" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
-            <svg id="icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"/></svg>
+            <svg id="icon-menu" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <svg id="icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"></path></svg>
           </button>
         </div>
       </div>
@@ -74,7 +74,7 @@
       <section id="hero" class="py-16 sm:py-28">
         <div class="grid items-center gap-16 lg:grid-cols-2">
           <div>
-            <span class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-1.5 text-[11px] sm:text-sm font-semibold uppercase tracking-wider text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">Software Engineer & Developer</span>
+            <span class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-1.5 text-[11px] sm:text-sm font-semibold uppercase tracking-wider text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">Software Engineer &amp; Developer</span>
             <h1 class="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl bg-gradient-to-r from-slate-900 via-indigo-700 to-blue-600 bg-clip-text text-transparent dark:from-white dark:via-indigo-400 dark:to-blue-400">Hi, I'm Chirag Dodiya, Software Engineer</h1>
             <p class="mt-6 max-w-xl text-lg text-slate-600 dark:text-slate-300">Building scalable web applications and intuitive user experiences that drive business success.</p>
             <div class="mt-8 flex flex-wrap items-center gap-4">
@@ -84,12 +84,12 @@
             <div class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
               <span>Professional Software Engineer</span>
               <span class="hidden h-1 w-1 rounded-full bg-slate-300 sm:inline-block"></span>
-              <span>Open to opportunities & collaborations</span>
+              <span>Open to opportunities &amp; collaborations</span>
             </div>
           </div>
           <div class="relative">
             <div class="relative overflow-hidden rounded-3xl border border-white/30 bg-white/70 shadow-2xl backdrop-blur-xl dark:border-slate-700/50 dark:bg-slate-900/60">
-              <img src="https://8c05e8c55501a7e276ad36494eb4e3da.cdn.bubble.io/f1775821665488x475598746579931200/chirag.png" alt="Professional portrait photo of Chirag Dodiya" class="h-full w-full object-cover rounded-3xl" loading="lazy" />
+              <img src="https://8c05e8c55501a7e276ad36494eb4e3da.cdn.bubble.io/f1775821665488x475598746579931200/chirag.png" alt="Professional portrait photo of Chirag Dodiya" class="h-full w-full object-cover rounded-3xl" loading="lazy">
             </div>
           </div>
         </div>
@@ -100,8 +100,8 @@
         <div class="mx-auto max-w-5xl text-center">
           <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">Connect with me on</p>
           <div class="mt-8 flex items-center justify-center gap-12 text-slate-600 dark:text-slate-300">
-            <a href="https://linkedin.com/in/chiragdodiya" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600" aria-label="LinkedIn profile"><svg class="h-8 w-8 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3V3zm5.75 14.5h2.5v-5.5h-2.5v5.5zm1.25-6.5c.83 0 1.5-.68 1.5-1.5S10.08 9 9.25 9 7.75 9.68 7.75 10.5 8.42 11.5 10 11.5zm3.75 6.5h2.5v-3.24c0-.8-.28-1.35-1-1.35a1.62 1.62 0 00-1.5 1.36V17.5z"/></svg></a>
-            <a href="https://github.com/chiragdodiya" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600" aria-label="GitHub profile"><svg class="h-8 w-8 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12a10 10 0 006.84 9.49c.5.09.68-.22.68-.49v-1.71c-2.83.62-3.44-1.36-3.44-1.36a2.71 2.71 0 00-1.13-1.49c-.92-.63.07-.62.07-.62a2.15 2.15 0 011.56 1.05 2.16 2.16 0 002.94.84 2.16 2.16 0 01.64-1.35c-2.26-.26-4.64-1.13-4.64-5a3.9 3.9 0 011.04-2.7 3.6 3.6 0 01.1-2.66s.84-.27 2.75 1.02a9.58 9.58 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02a3.6 3.6 0 01.1 2.66 3.9 3.9 0 011.04 2.7c0 3.87-2.39 4.74-4.66 5a2.42 2.42 0 01.7 1.89v2.8c0 .27.18.58.69.48A10 10 0 0022 12c0-5.52-4.48-10-10-10z"/></svg></a>
+            <a href="https://linkedin.com/in/chiragdodiya" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600" aria-label="LinkedIn profile"><svg class="h-8 w-8 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3V3zm5.75 14.5h2.5v-5.5h-2.5v5.5zm1.25-6.5c.83 0 1.5-.68 1.5-1.5S10.08 9 9.25 9 7.75 9.68 7.75 10.5 8.42 11.5 10 11.5zm3.75 6.5h2.5v-3.24c0-.8-.28-1.35-1-1.35a1.62 1.62 0 00-1.5 1.36V17.5z"></path></svg></a>
+            <a href="https://github.com/chiragdodiya" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600" aria-label="GitHub profile"><svg class="h-8 w-8 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12a10 10 0 006.84 9.49c.5.09.68-.22.68-.49v-1.71c-2.83.62-3.44-1.36-3.44-1.36a2.71 2.71 0 00-1.13-1.49c-.92-.63.07-.62.07-.62a2.15 2.15 0 011.56 1.05 2.16 2.16 0 002.94.84 2.16 2.16 0 01.64-1.35c-2.26-.26-4.64-1.13-4.64-5a3.9 3.9 0 011.04-2.7 3.6 3.6 0 01.1-2.66s.84-.27 2.75 1.02a9.58 9.58 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02a3.6 3.6 0 01.1 2.66 3.9 3.9 0 011.04 2.7c0 3.87-2.39 4.74-4.66 5a2.42 2.42 0 01.7 1.89v2.8c0 .27.18.58.69.48A10 10 0 0022 12c0-5.52-4.48-10-10-10z"></path></svg></a>
           </div>
         </div>
       </section>
@@ -109,50 +109,50 @@
       <!-- Skills -->
       <section id="skills" class="py-10 sm:py-24">
         <div class="mx-auto max-w-3xl text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">Core Skills & Expertise</h2>
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">Core Skills &amp; Expertise</h2>
           <p class="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400">Bringing years of experience in software engineering using modern technologies and best practices.</p>
         </div>
         <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
             <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70" aria-hidden="true">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 13h2v-2H3v2zM7 13h10v-2H7v2zM3 17h18v-2H3v2zM3 7h4V5H3v2z"/></svg>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 13h2v-2H3v2zM7 13h10v-2H7v2zM3 17h18v-2H3v2zM3 7h4V5H3v2z"></path></svg>
             </div>
             <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Web Development</h3>
             <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Building responsive, performant web apps using React, Node.js, and modern JavaScript.</p>
           </article>
           <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
             <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70" aria-hidden="true">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 10l4.553 4.553a2 2 0 01-2.828 2.828L12 13.828l-4.725 4.725a2 2 0 01-2.829-2.828L9 10l-4.553-4.553a2 2 0 012.828-2.828L12 6.172l4.725-4.725a2 2 0 012.828 2.828L15 10z"/></svg>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 10l4.553 4.553a2 2 0 01-2.828 2.828L12 13.828l-4.725 4.725a2 2 0 01-2.829-2.828L9 10l-4.553-4.553a2 2 0 012.828-2.828L12 6.172l4.725-4.725a2 2 0 012.828 2.828L15 10z"></path></svg>
             </div>
-            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">API & Backend</h3>
+            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">API &amp; Backend</h3>
             <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Designing and developing scalable REST and GraphQL APIs with Node.js, Express, and databases.</p>
           </article>
           <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
             <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70" aria-hidden="true">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M5 12h14M12 5l7 7-7 7"></path></svg>
             </div>
-            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Cloud & DevOps</h3>
+            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Cloud &amp; DevOps</h3>
             <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Experience deploying and managing cloud infrastructure on AWS, CI/CD pipelines, and containerization.</p>
           </article>
           <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
             <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70" aria-hidden="true">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M11 17l-3-3m0 0l3-3m-3 3h8"/></svg>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M11 17l-3-3m0 0l3-3m-3 3h8"></path></svg>
             </div>
             <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Team Collaboration</h3>
             <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Advocating agile workflows, code reviews, and cross-functional teamwork to deliver quality software.</p>
           </article>
           <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
             <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70" aria-hidden="true">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 7h18M3 12h18M3 17h18"/></svg>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 7h18M3 12h18M3 17h18"></path></svg>
             </div>
             <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Continuous Learning</h3>
             <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Committed to staying updated with latest tech trends, frameworks, and methodologies.</p>
           </article>
           <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
             <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70" aria-hidden="true">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3l7 4v5c0 4.418-3.134 8.418-7 9-3.866-.582-7-4.582-7-9V7l7-4z"/></svg>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3l7 4v5c0 4.418-3.134 8.418-7 9-3.866-.582-7-4.582-7-9V7l7-4z"></path></svg>
             </div>
-            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Security & Compliance</h3>
+            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Security &amp; Compliance</h3>
             <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Implementing best practices to protect data and build trustworthy applications.</p>
           </article>
         </div>
@@ -170,17 +170,17 @@
       <section id="portfolio" class="py-8 sm:py-24">
         <div class="grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">Selected Projects & Portfolio</h2>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">Selected Projects &amp; Portfolio</h2>
             <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 sm:text-base">Explore projects and case studies that demonstrate my experience and skills in real-world applications.</p>
             <ul class="mt-5 space-y-3 text-sm text-slate-700 dark:text-slate-300">
-              <li class="flex items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-50 text-indigo-600 dark:bg-indigo-900/50 dark:text-indigo-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"/></svg></span><span><a href="#" class="text-indigo-600 hover:underline" aria-label="Scalable E-commerce Platform project link" target="_blank" rel="noopener noreferrer">Scalable E-commerce Platform</a> – Developed a full-stack solution with React and Node.js serving 10k+ daily users.</span></li>
-              <li class="flex items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-50 text-indigo-600 dark:bg-indigo-900/50 dark:text-indigo-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"/></svg></span><span><a href="#" class="text-indigo-600 hover:underline" aria-label="Real-time Collaboration Tool project link" target="_blank" rel="noopener noreferrer">Real-time Collaboration Tool</a> – Built with WebSockets and cloud infrastructure for seamless teamwork experience.</span></li>
-              <li class="flex items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-50 text-indigo-600 dark:bg-indigo-900/50 dark:text-indigo-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"/></svg></span><span><a href="#" class="text-indigo-600 hover:underline" aria-label="Open Source Contributions link" target="_blank" rel="noopener noreferrer">Open Source Contributions</a> – Active contributor to popular libraries and frameworks on GitHub.</span></li>
+              <li class="flex items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-50 text-indigo-600 dark:bg-indigo-900/50 dark:text-indigo-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"></path></svg></span><span><a href="#" class="text-indigo-600 hover:underline" aria-label="Scalable E-commerce Platform project link" target="_blank" rel="noopener noreferrer">Scalable E-commerce Platform</a> – Developed a full-stack solution with React and Node.js serving 10k+ daily users.</span></li>
+              <li class="flex items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-50 text-indigo-600 dark:bg-indigo-900/50 dark:text-indigo-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"></path></svg></span><span><a href="#" class="text-indigo-600 hover:underline" aria-label="Real-time Collaboration Tool project link" target="_blank" rel="noopener noreferrer">Real-time Collaboration Tool</a> – Built with WebSockets and cloud infrastructure for seamless teamwork experience.</span></li>
+              <li class="flex items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-50 text-indigo-600 dark:bg-indigo-900/50 dark:text-indigo-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"></path></svg></span><span><a href="#" class="text-indigo-600 hover:underline" aria-label="Open Source Contributions link" target="_blank" rel="noopener noreferrer">Open Source Contributions</a> – Active contributor to popular libraries and frameworks on GitHub.</span></li>
             </ul>
           </div>
           <div class="relative">
             <div class="overflow-hidden rounded-3xl border border-white/30 bg-white/70 shadow-2xl backdrop-blur-xl dark:border-slate-700/50 dark:bg-slate-900/60">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="Code editor screen showing project code" class="h-full w-full object-cover" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Code editor screen showing project code" class="h-full w-full object-cover" loading="lazy">
             </div>
           </div>
         </div>
@@ -195,10 +195,10 @@
           </div>
           <div>
             <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300">
-              <li class="flex cursor-default items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 dark:bg-emerald-900/40 dark:text-emerald-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"/></svg></span><span><strong>Reliable Delivery</strong> – Proven track record of consistently shipping high-quality, maintainable code.</span></li>
-              <li class="flex cursor-default items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 dark:bg-emerald-900/40 dark:text-emerald-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"/></svg></span><span><strong>Technical Expertise</strong> – Deep knowledge of modern frameworks, languages, and best practices.</span></li>
-              <li class="flex cursor-default items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 dark:bg-emerald-900/40 dark:text-emerald-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"/></svg></span><span><strong>Collaboration</strong> – Strong communication skills and ability to work well in cross-functional teams.</span></li>
-              <li class="flex cursor-default items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 dark:bg-emerald-900/40 dark:text-emerald-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"/></svg></span><span><strong>Problem Solving</strong> – Driven to find elegant and efficient solutions for complex challenges.</span></li>
+              <li class="flex cursor-default items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 dark:bg-emerald-900/40 dark:text-emerald-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"></path></svg></span><span><strong>Reliable Delivery</strong> – Proven track record of consistently shipping high-quality, maintainable code.</span></li>
+              <li class="flex cursor-default items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 dark:bg-emerald-900/40 dark:text-emerald-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"></path></svg></span><span><strong>Technical Expertise</strong> – Deep knowledge of modern frameworks, languages, and best practices.</span></li>
+              <li class="flex cursor-default items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 dark:bg-emerald-900/40 dark:text-emerald-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"></path></svg></span><span><strong>Collaboration</strong> – Strong communication skills and ability to work well in cross-functional teams.</span></li>
+              <li class="flex cursor-default items-start gap-2"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 dark:bg-emerald-900/40 dark:text-emerald-400" aria-hidden="true"><svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 6l3 3 5-6"></path></svg></span><span><strong>Problem Solving</strong> – Driven to find elegant and efficient solutions for complex challenges.</span></li>
             </ul>
           </div>
         </div>
@@ -207,27 +207,27 @@
       <!-- Testimonials -->
       <section id="testimonials" class="py-8 sm:py-24">
         <div class="mx-auto max-w-3xl text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">What colleagues & clients say</h2>
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">What colleagues &amp; clients say</h2>
           <p class="mt-3 text-sm text-slate-600 sm:text-base">Trusted by teams and clients for delivering excellence.</p>
         </div>
         <div class="mt-10 grid gap-6 md:grid-cols-3">
           <article class="flex h-full flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
             <div class="flex items-center gap-3">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Portrait of Ananya B." class="h-10 w-10 rounded-full object-cover" loading="lazy"/>
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=120&amp;q=80" alt="Portrait of Ananya B." class="h-10 w-10 rounded-full object-cover" loading="lazy">
               <div class="text-left"><div class="text-sm font-semibold text-slate-900 dark:text-slate-50">Ananya B.</div><div class="text-xs text-slate-500 dark:text-slate-400">Head of Operations, NovaCloud</div></div>
             </div>
             <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">"Chirag’s expertise and dedication transformed our software projects. His code is clean, reliable, and delivered on time."</p>
           </article>
           <article class="flex h-full flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
             <div class="flex items-center gap-3">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80" alt="Portrait of Rahul Kumar" class="h-10 w-10 rounded-full object-cover" loading="lazy"/>
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&amp;fit=crop&amp;w=120&amp;q=80" alt="Portrait of Rahul Kumar" class="h-10 w-10 rounded-full object-cover" loading="lazy">
               <div class="text-left"><div class="text-sm font-semibold text-slate-900 dark:text-slate-50">Rahul Kumar</div><div class="text-xs text-slate-500 dark:text-slate-400">Product Lead, PixelDesk</div></div>
             </div>
             <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">"Collaborating with Chirag was a game changer. His proactive communication and problem solving skills stood out."</p>
           </article>
           <article class="flex h-full flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
             <div class="flex items-center gap-3">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Portrait of Lisa S." class="h-10 w-10 rounded-full object-cover" loading="lazy"/>
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&amp;fit=crop&amp;w=120&amp;q=80" alt="Portrait of Lisa S." class="h-10 w-10 rounded-full object-cover" loading="lazy">
               <div class="text-left"><div class="text-sm font-semibold text-slate-900 dark:text-slate-50">Lisa S.</div><div class="text-xs text-slate-500 dark:text-slate-400">Founder, Brightline Studio</div></div>
             </div>
             <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">"Chirag’s calm and focused approach to complex projects reassured our entire team and accelerated delivery."</p>
@@ -243,23 +243,23 @@
         </div>
         <div class="mx-auto mt-10 max-w-3xl space-y-3">
           <div class="faq-item overflow-hidden rounded-2xl border border-white/30 bg-white/70 dark:border-slate-700/50 dark:bg-slate-900/60">
-            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">What programming languages do you specialize in?<span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"/></svg></span></button>
+            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">What programming languages do you specialize in?<span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"></path></svg></span></button>
             <div class="faq-content hidden border-t border-slate-100 px-4 pb-4 pt-2 text-sm text-slate-600 dark:border-slate-700 dark:text-slate-400 sm:px-5">I primarily work with JavaScript/TypeScript including React and Node.js, along with cloud platforms and modern backend tech.</div>
           </div>
           <div class="faq-item overflow-hidden rounded-2xl border border-white/30 bg-white/70 dark:border-slate-700/50 dark:bg-slate-900/60">
-            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">Are you available for freelance or contract projects?<span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"/></svg></span></button>
+            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">Are you available for freelance or contract projects?<span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"></path></svg></span></button>
             <div class="faq-content hidden border-t border-slate-100 px-4 pb-4 pt-2 text-sm text-slate-600 dark:border-slate-700 dark:text-slate-400 sm:px-5">Yes, I am open to new opportunities including freelance, part-time, or full-time engagements. Please reach out via email.</div>
           </div>
           <div class="faq-item overflow-hidden rounded-2xl border border-white/30 bg-white/70 dark:border-slate-700/50 dark:bg-slate-900/60">
-            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">Do you have a resume or CV available?<span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"/></svg></span></button>
+            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">Do you have a resume or CV available?<span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"></path></svg></span></button>
             <div class="faq-content hidden border-t border-slate-100 px-4 pb-4 pt-2 text-sm text-slate-600 dark:border-slate-700 dark:text-slate-400 sm:px-5">Yes, please contact me via email to receive my latest resume or portfolio materials.</div>
           </div>
           <div class="faq-item overflow-hidden rounded-2xl border border-white/30 bg-white/70 dark:border-slate-700/50 dark:bg-slate-900/60">
-            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">What is your preferred method of contact?<span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"/></svg></span></button>
+            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">What is your preferred method of contact?<span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"></path></svg></span></button>
             <div class="faq-content hidden border-t border-slate-100 px-4 pb-4 pt-2 text-sm text-slate-600 dark:border-slate-700 dark:text-slate-400 sm:px-5">Email is preferred for initial contact: <a href="mailto:hi@chirag.co" class="text-indigo-600 underline">hi@chirag.co</a></div>
           </div>
           <div class="faq-item overflow-hidden rounded-2xl border border-white/30 bg-white/70 dark:border-slate-700/50 dark:bg-slate-900/60">
-            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">Do you work with startups?<span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"/></svg></span></button>
+            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">Do you work with startups?<span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"></path></svg></span></button>
             <div class="faq-content hidden border-t border-slate-100 px-4 pb-4 pt-2 text-sm text-slate-600 dark:border-slate-700 dark:text-slate-400 sm:px-5">Yes, from MVP to scale.</div>
           </div>
         </div>
@@ -465,11 +465,10 @@
 })();
   </script>
 
-  <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-element-selection.js" defer></script>
-  <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-branding.js" defer></script>
+  <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-element-selection.js" defer=""></script>
+  <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-branding.js" defer=""></script>
   <script>
     const es = new EventSource("/__hmr");
     es.onmessage = () => location.reload();
   </script>
-</body>
-</html>
+
