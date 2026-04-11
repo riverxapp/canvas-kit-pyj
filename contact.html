@@ -113,29 +113,113 @@
     <section id="hero" class="bg-gradient-to-b from-indigo-600 via-blue-600 to-cyan-500 text-white py-20 px-6 sm:px-12 lg:px-20">
       <div class="mx-auto max-w-4xl text-center">
         <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-4">Get in Touch</h1>
-        <p class="text-lg sm:text-xl max-w-3xl mx-auto mb-8">Have a project in mind or just want to say hello? Fill out the form below and I'll get back to you promptly.</p>
+        <p class="text-lg sm:text-xl max-w-3xl mx-auto mb-8">Have a project in mind or just want to say hello? Use the form below or reach out through one of the contact methods — I'll respond as soon as possible.</p>
+        <div class="mt-4 flex items-center justify-center gap-3">
+          <a href="#contact-form" class="inline-flex items-center gap-2 rounded-full bg-white/20 px-5 py-2.5 text-sm font-semibold backdrop-blur-sm hover:bg-white/30 transition">Contact Form</a>
+          <a href="#contact-info" class="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm hover:bg-white/20 transition">Other Ways to Reach Me</a>
+        </div>
       </div>
     </section>
 
     <section class="py-16 px-6 sm:px-12 lg:px-20 bg-white dark:bg-slate-900">
-      <div class="mx-auto max-w-3xl bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-10 sm:p-12">
-        <form action="https://formspree.io/f/moqzblow" method="POST" class="space-y-6" novalidate>
-          <div>
-            <label for="name" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your full name" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500" />
+      <div class="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <!-- Contact Form -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 sm:p-10">
+          <h2 class="text-2xl font-bold mb-2">Send a message</h2>
+          <p class="text-sm text-slate-500 dark:text-slate-300 mb-6">Tell me about your project, timeline, or any questions you have. I'll get back within 1-2 business days.</p>
+
+          <form id="contact-form" action="https://formspree.io/f/moqzblow" method="POST" class="space-y-5" novalidate>
+            <!-- honeypot -->
+            <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+            <div>
+              <label for="name" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your full name" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500" />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Email</label>
+              <input type="email" id="email" name="_replyto" required placeholder="you@example.com" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500" />
+            </div>
+
+            <div>
+              <label for="subject" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Subject</label>
+              <input type="text" id="subject" name="_subject" placeholder="Brief subject" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500" />
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Message</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Write your message here" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500"></textarea>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <button id="submit-btn" type="submit" class="flex-1 rounded-full bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 px-6 py-3 text-white font-semibold shadow-lg transition hover:scale-[1.03] focus:outline-none focus:ring-4 focus:ring-indigo-400">Send Message</button>
+            </div>
+
+            <div aria-live="polite" id="form-status" class="mt-2 text-sm text-slate-600 dark:text-slate-300"></div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <aside id="contact-info" class="space-y-6">
+          <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 sm:p-8">
+            <h3 class="text-lg font-semibold mb-3">Contact Information</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">Prefer email or a quick chat? Choose a method below.</p>
+
+            <ul class="space-y-4 text-sm">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600 dark:bg-indigo-900/20 dark:text-indigo-300">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z"/></svg>
+                </span>
+                <div>
+                  <div class="font-medium">Email</div>
+                  <a href="mailto:hi@chirag.co" class="text-indigo-600 dark:text-indigo-300 hover:underline">hi@chirag.co</a>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-300">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 5h2l2 5-1 2a11 11 0 005 5l2-1 5 2v2a2 2 0 01-2 2 19 19 0 01-17-17A2 2 0 013 5z"/></svg>
+                </span>
+                <div>
+                  <div class="font-medium">Phone</div>
+                  <a href="tel:+911234567890" class="hover:underline">+91 12345 67890</a>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-cyan-50 text-cyan-600 dark:bg-cyan-900/20 dark:text-cyan-300">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14 2 9.27l6.91-0.99L12 2z"/></svg>
+                </span>
+                <div>
+                  <div class="font-medium">Location</div>
+                  <div class="text-slate-600 dark:text-slate-300">Ahmedabad, India</div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div>
-            <label for="email" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Email</label>
-            <input type="email" id="email" name="_replyto" required placeholder="you@example.com" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500" />
+
+          <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 sm:p-8">
+            <h4 class="text-lg font-semibold mb-3">Follow & Collaborate</h4>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">Find me on GitHub and LinkedIn — open to freelance and full-time opportunities.</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="https://github.com/chiragdodiya" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-slate-200 dark:border-slate-700 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-900 transition">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.16 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.1 2.94.84.09-.66.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85.004 1.71.115 2.51.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .26.18.58.69.48A10.02 10.02 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+                GitHub
+              </a>
+              <a href="https://linkedin.com/in/chiragdodiya" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-slate-200 dark:border-slate-700 px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-900 transition">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-14h4v2a4 4 0 013.6-2zM2 9h4v14H2z"/></svg>
+                LinkedIn
+              </a>
+            </div>
           </div>
-          <div>
-            <label for="message" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Write your message here" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500"></textarea>
+
+          <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 sm:p-8">
+            <h4 class="text-lg font-semibold mb-3">FAQ</h4>
+            <p class="text-sm text-slate-600 dark:text-slate-300">For common questions about rates, availability, and process, check the FAQ on the site or include your timeline in the message for a faster reply.</p>
+            <a href="index.html#faq" class="mt-4 inline-block text-sm text-indigo-600 dark:text-indigo-300 hover:underline">View FAQ</a>
           </div>
-          <div>
-            <button type="submit" class="w-full rounded-full bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 px-6 py-3 text-white font-semibold shadow-lg transition hover:scale-[1.03] focus:outline-none focus:ring-4 focus:ring-indigo-400">Send Message</button>
-          </div>
-        </form>
+        </aside>
       </div>
     </section>
   </main>
@@ -172,5 +256,64 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      // AJAX form submission to provide inline feedback without leaving the page.
+      const form = document.getElementById('contact-form');
+      const status = document.getElementById('form-status');
+      const submitBtn = document.getElementById('submit-btn');
+
+      if (!form) return;
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        // Use browser validation first
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        const action = form.getAttribute('action') || window.location.href;
+        const formData = new FormData(form);
+
+        // Basic UI locking
+        submitBtn.disabled = true;
+        submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
+        status.textContent = 'Sending...';
+
+        try {
+          const res = await fetch(action, {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json'
+            },
+            body: formData
+          });
+
+          if (res.ok) {
+            status.textContent = 'Thanks! Your message has been sent — I will reply soon.';
+            status.classList.remove('text-red-500');
+            status.classList.add('text-green-600', 'dark:text-green-400');
+            form.reset();
+          } else {
+            const data = await res.json().catch(() => ({}));
+            const message = (data && data.error) ? data.error : 'Something went wrong. Please try again later.';
+            status.textContent = message;
+            status.classList.remove('text-green-600', 'dark:text-green-400');
+            status.classList.add('text-red-500');
+          }
+        } catch (err) {
+          status.textContent = 'Network error. Please check your connection and try again.';
+          status.classList.remove('text-green-600', 'dark:text-green-400');
+          status.classList.add('text-red-500');
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
