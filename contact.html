@@ -1,6 +1,6 @@
-
-
-
+<!doctype html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact - Chirag Dodiya Portfolio</title>
@@ -10,6 +10,71 @@
       darkMode: 'class',
     }
   </script>
+
+  <!-- Enhanced keyboard focus styles to improve accessibility while preserving theme -->
+  <style>
+    /* Remove default outline but provide a stronger, visible focus ring for keyboard users */
+    :focus { outline: none; }
+
+    /* Base focus ring for interactive elements */
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: none;
+      /* soft outer glow + clear colored ring for contrast */
+      box-shadow: 0 0 0 4px rgba(99,102,241,0.18);
+      border-color: rgb(79,70,229);
+      transition: box-shadow 120ms ease-in-out, border-color 120ms ease-in-out;
+      border-radius: 0.5rem;
+      z-index: 50; /* ensure ring is visible above nearby content */
+    }
+
+    /* Slightly stronger ring in dark mode for improved contrast */
+    .dark a:focus-visible,
+    .dark button:focus-visible,
+    .dark input:focus-visible,
+    .dark select:focus-visible,
+    .dark textarea:focus-visible {
+      box-shadow: 0 0 0 4px rgba(79,70,229,0.36);
+      border-color: rgb(99,102,241);
+    }
+
+    /* Nav, mobile links, footer links: ensure ring appears even for text-only links */
+    nav a:focus-visible,
+    .mobile-link:focus-visible,
+    footer a:focus-visible,
+    .inline-flex > a:focus-visible,
+    .inline-flex:focus-visible {
+      box-shadow: 0 0 0 4px rgba(79,70,229,0.22);
+      border-radius: 0.5rem;
+    }
+
+    /* Buttons with gradients: add a subtle inset to preserve visual depth */
+    button:focus-visible,
+    .rounded-full:focus-visible {
+      box-shadow:
+        0 0 0 4px rgba(79,70,229,0.22),
+        inset 0 0 0 1px rgba(255,255,255,0.04);
+    }
+
+    /* Inputs/select/textarea: ensure padding and radius remain consistent with focus ring */
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      border-radius: 0.5rem;
+    }
+
+    /* Keep SVGs clean */
+    a:focus-visible svg, button:focus-visible svg { outline: none; }
+
+    /* Respect reduced motion preferences */
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+
   <script>
     (function() {
       const stored = localStorage.getItem('theme');
@@ -61,8 +126,8 @@
       initYear();
     })();
   </script>
-
-
+</head>
+<body class="antialiased">
   <header class="sticky top-0 z-40 border-b border-white/20 bg-white/70 backdrop-blur-xl dark:border-slate-800/60 dark:bg-slate-950/70">
     <nav>
       <div class="mx-auto flex w-full max-w-[1600px] items-center justify-between px-4 py-4 sm:px-6">
@@ -325,4 +390,5 @@
       });
     })();
   </script>
-
+</body>
+</html>
