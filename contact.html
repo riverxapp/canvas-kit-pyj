@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact - Chirag Dodiya Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
+  window.onload=function(){const btn=document.getElementById('mobile-menu-btn');const menu=document.getElementById('mobile-menu');if(!btn||!menu)return;btn.setAttribute('aria-controls','mobile-menu');btn.setAttribute('aria-expanded','false');menu.setAttribute('aria-hidden','true');btn.addEventListener('click',()=&gt;{const isOpen=menu.classList.contains('hidden');menu.classList.toggle('hidden',!isOpen);menu.setAttribute('aria-hidden',String(!isOpen));btn.setAttribute('aria-expanded',String(isOpen));btn.focus();});}
 
   <!-- Enhanced keyboard focus styles to improve accessibility while preserving theme -->
   <style>
@@ -565,62 +561,5 @@
     </div>
   </footer>
 
-  <script>
-    (function () {
-      // AJAX form submission to provide inline feedback without leaving the page.
-      const form = document.getElementById('contact-form');
-      const status = document.getElementById('form-status');
-      const submitBtn = document.getElementById('submit-btn');
-
-      if (!form) return;
-
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-
-        // Use browser validation first
-        if (!form.checkValidity()) {
-          form.reportValidity();
-          return;
-        }
-
-        const action = form.getAttribute('action') || window.location.href;
-        const formData = new FormData(form);
-
-        // Basic UI locking
-        submitBtn.disabled = true;
-        submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
-        status.textContent = 'Sending...';
-
-        try {
-          const res = await fetch(action, {
-            method: 'POST',
-            headers: {
-              'Accept': 'application/json'
-            },
-            body: formData
-          });
-
-          if (res.ok) {
-            status.textContent = 'Thanks! Your message has been sent — I will reply soon.';
-            status.classList.remove('text-red-500');
-            status.classList.add('text-green-600', 'dark:text-green-400');
-            form.reset();
-          } else {
-            const data = await res.json().catch(() => ({}));
-            const message = (data && data.error) ? data.error : 'Something went wrong. Please try again later.';
-            status.textContent = message;
-            status.classList.remove('text-green-600', 'dark:text-green-400');
-            status.classList.add('text-red-500');
-          }
-        } catch (err) {
-          status.textContent = 'Network error. Please check your connection and try again.';
-          status.classList.remove('text-green-600', 'dark:text-green-400');
-          status.classList.add('text-red-500');
-        } finally {
-          submitBtn.disabled = false;
-          submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
-        }
-      });
-    })();
-  </script>
+  
 
