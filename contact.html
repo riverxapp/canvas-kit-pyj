@@ -1,6 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
+
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Contact — Chirag Dodiya</title>
@@ -119,8 +119,8 @@
     :focus{outline:none}
     :focus-visible{box-shadow:var(--focus-ring);border-radius:10px}
   </style>
-</head>
-<body>
+
+
   <a href="#main" class="skip-link">Skip to content</a>
 
   <header class="site-header" role="banner">
@@ -144,7 +144,7 @@
       <p>Fill the form to send a message, share an attachment, or find alternate ways to reach me below.</p>
       <div class="cta">
         <a class="btn primary" href="#contact-form">Open contact form</a>
-        <a class="btn" href="#contact-info">Contact details & map</a>
+        <a class="btn" href="#contact-info">Contact details &amp; map</a>
       </div>
     </section>
 
@@ -161,23 +161,17 @@
         </noscript>
 
         <!-- Main contact form -->
-        <form id="contact-form"
-              action="/api/contact"
-              method="POST"
-              enctype="multipart/form-data"
-              autocomplete="on"
-              novalidate
-              aria-describedby="form-instructions">
+        <form id="contact-form" action="/api/contact" method="POST" enctype="multipart/form-data" autocomplete="on" novalidate="" aria-describedby="form-instructions">
           <p id="form-instructions" class="muted" style="margin-top:8px;margin-bottom:12px">We accept messages and optional file attachments. Phone is optional but use international format if possible.</p>
 
           <div class="row two" style="margin-bottom:12px">
             <div>
               <label for="fullName">Full name <span aria-hidden="true" style="color:var(--danger)">*</span></label>
-              <input id="fullName" name="fullName" type="text" class="field" placeholder="Jane Doe" required autocomplete="name" aria-required="true">
+              <input id="fullName" name="fullName" type="text" class="field" placeholder="Jane Doe" required="" autocomplete="name" aria-required="true">
             </div>
             <div>
               <label for="email">Email address <span aria-hidden="true" style="color:var(--danger)">*</span></label>
-              <input id="email" name="email" type="email" class="field" placeholder="you@example.com" required autocomplete="email" aria-required="true">
+              <input id="email" name="email" type="email" class="field" placeholder="you@example.com" required="" autocomplete="email" aria-required="true">
             </div>
           </div>
 
@@ -189,13 +183,13 @@
             </div>
             <div>
               <label for="subject">Subject <span aria-hidden="true" style="color:var(--danger)">*</span></label>
-              <input id="subject" name="subject" type="text" class="field" placeholder="Project inquiry or question" required autocomplete="name" aria-required="true">
+              <input id="subject" name="subject" type="text" class="field" placeholder="Project inquiry or question" required="" autocomplete="name" aria-required="true">
             </div>
           </div>
 
           <div style="margin-bottom:12px">
             <label for="message">Message <span aria-hidden="true" style="color:var(--danger)">*</span></label>
-            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, timeline, budget, or questions..." required aria-required="true" autocomplete="off"></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, timeline, budget, or questions..." required="" aria-required="true" autocomplete="off"></textarea>
           </div>
 
           <div style="margin-bottom:12px">
@@ -215,7 +209,7 @@
       </div>
 
       <aside class="card" id="contact-info" aria-labelledby="contact-info-title">
-        <h3 id="contact-info-title">Contact details & map</h3>
+        <h3 id="contact-info-title">Contact details &amp; map</h3>
         <p class="muted">Prefer to email or call? See address, hours, and an interactive map below.</p>
 
         <div class="contact-list" style="margin-top:12px;">
@@ -262,12 +256,7 @@
               Change the `src` below to your location's Google Maps URL or a static map.
               Example editable src: "https://www.google.com/maps/embed?pb=!1m18!...".
             -->
-            <iframe
-              class="map"
-              src="https://www.google.com/maps?q=Ahmedabad,+India&output=embed"
-              title="Map: Ahmedabad, India"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="map" src="https://www.google.com/maps?q=Ahmedabad,+India&amp;output=embed" title="Map: Ahmedabad, India" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
@@ -278,7 +267,7 @@
             <a href="https://linkedin.com/in/chiragdodiya" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
-      </aside>
+      <div id="map" aria-label="Location map"></div></aside>
     </section>
 
     <footer class="page-footer" role="contentinfo" aria-label="Footer">
@@ -435,5 +424,4 @@
 
     })();
   </script>
-</body>
-</html>
+
