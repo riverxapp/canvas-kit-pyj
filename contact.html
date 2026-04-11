@@ -221,7 +221,112 @@
 })();
 
 
-  <a href="#hero" class="skip-link">Skip to content</a>
+  <script>(function () {
+  'use strict';
+  function initTheme() {
+    const applyAria = (el, isDark) => {
+      if (!el) return;
+      el.setAttribute('aria-pressed', String(isDark));
+    };
+
+    const toggle = () => {
+      const root = document.documentElement;
+      const isDark = root.classList.contains('dark');
+      root.classList.remove('light', 'dark');
+      root.classList.add(isDark ? 'light' : 'dark');
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+
+      // Update aria-pressed states for both toggles
+      applyAria(document.getElementById('theme-toggle'), !isDark);
+      applyAria(document.getElementById('theme-toggle-mobile'), !isDark);
+    };
+
+    const tDesktop = document.getElementById('theme-toggle');
+    const tMobile = document.getElementById('theme-toggle-mobile');
+
+    // Initialize aria-pressed values based on current theme
+    const isDarkInit = document.documentElement.classList.contains('dark');
+    applyAria(tDesktop, isDarkInit);
+    applyAria(tMobile, isDarkInit);
+
+    tDesktop?.addEventListener('click', toggle);
+    tMobile?.addEventListener('click', toggle);
+  }
+
+  function initMobileMenu() {
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const iconMenu = document.getElementById('icon-menu');
+    const iconClose = document.getElementById('icon-close');
+    if (!btn || !menu) return;
+
+    // Ensure accessible attributes
+    btn.setAttribute('aria-controls', 'mobile-menu');
+    btn.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-hidden', 'true');
+
+    btn.addEventListener('click', () => {
+      const isOpen = menu.classList.contains('hidden');
+      // Toggle visibility
+      menu.classList.toggle('hidden', !isOpen);
+      menu.setAttribute('aria-hidden', String(!isOpen));
+      btn.setAttribute('aria-expanded', String(isOpen));
+      if (iconMenu) iconMenu.classList.toggle('hidden', isOpen);
+      if (iconClose) iconClose.classList.toggle('hidden', !isOpen);
+      if (isOpen) {
+        // Move focus into first link for better keyboard experience
+        const first = menu.querySelector('a, button');
+        if (first) first.focus();
+      } else {
+        // Return focus to toggle
+        btn.focus();
+      }
+    });
+
+    // Close mobile menu when any mobile link is clicked
+    menu.querySelectorAll('.mobile-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        menu.setAttribute('aria-hidden', 'true');
+        btn.setAttribute('aria-expanded', 'false');
+        if (iconMenu) iconMenu.classList.remove('hidden');
+        if (iconClose) iconClose.classList.add('hidden');
+        btn.focus();
+      });
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Escape' && !menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+        menu.setAttribute('aria-hidden', 'true');
+        btn.setAttribute('aria-expanded', 'false');
+        if (iconMenu) iconMenu.classList.remove('hidden');
+        if (iconClose) iconClose.classList.add('hidden');
+        btn.focus();
+      }
+    });
+  }
+
+  function initYear() {
+    const el = document.getElementById('year');
+    if (el) el.textContent = new Date().getFullYear();
+  }
+
+  // Ensure initialization happens after DOM is ready so elements exist
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      initTheme();
+      initMobileMenu();
+      initYear();
+    });
+  } else {
+    initTheme();
+    initMobileMenu();
+    initYear();
+  }
+})();</script>
+<a href="#hero" class="skip-link">Skip to content</a>
 
   <header class="sticky top-0 z-40 border-b border-white/20 bg-white/70 backdrop-blur-xl dark:border-slate-800/60 dark:bg-slate-950/70">
     <nav aria-label="Primary Navigation">
